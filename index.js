@@ -32,7 +32,7 @@ container.append(h1); */
 
 ReactDOM.render(page, document.querySelector("#root"));
  */
-
+/* 
 const navbar = (
   <nav>
     <h1>Paul Richard</h1>
@@ -50,3 +50,26 @@ const navbar = (
 const root = document.querySelector("#root");
 
 root.append(JSON.stringify(navbar));
+ */
+
+//******************************************************
+//******************************************************
+//******************************************************
+
+//challenge 1
+
+const body = (
+  <body>
+    <img src="./react-logo.png" />
+    <h1>Fun facts about React</h1>
+    <ul>
+      <li>Was first released in 2013</li>
+      <li>Was originally created ny jordan walke</li>
+      <li>Has well over 100k stars on Github</li>
+      <li>It is maintained by Facebook</li>
+      <li>Powers thousands of enterprise apps, including mobile appps</li>
+    </ul>
+  </body>
+);
+
+ReactDOM.render(body, document.querySelector("#root"));
