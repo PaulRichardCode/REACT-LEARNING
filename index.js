@@ -23,7 +23,7 @@ container.append(h1); */
 
 //JSX
 
-const page = (
+/* const page = (
   <div>
     <h1 className="header">This is JSX</h1>
     <p>This is a paragraph</p>
@@ -31,3 +31,22 @@ const page = (
 );
 
 ReactDOM.render(page, document.querySelector("#root"));
+ */
+
+const navbar = (
+  <nav>
+    <h1>Paul Richard</h1>
+    <h1>Paul Richard</h1>
+    <h1>Paul Richard</h1>
+
+    <ul>
+      <li>Pricing</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+);
+
+const root = document.querySelector("#root");
+
+root.append(JSON.stringify(navbar));
