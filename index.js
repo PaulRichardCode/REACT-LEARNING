@@ -1,48 +1,4 @@
-function Navbar() {
-  return (
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        Navbar
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">
-              Home <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              Features
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              Pricing
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">
-              Disabled
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  );
-}
-
-function mainContent() {
+/* function Maincontent() {
   return (
     <div>
       <h1>Hi, there i am learning react</h1>
@@ -54,7 +10,24 @@ function mainContent() {
 ReactDOM.render(
   <div>
     <Navbar />
-    <mainContent />
+    <Maincontent />
   </div>,
   document.querySelector("#cool")
 );
+ */
+/* 
+const container = document.querySelector("#root");
+const h1 = document.createElement("h1");
+h1.textContent = "roses are red, codom is transparent";
+container.append(h1); */
+
+//JSX
+
+const page = (
+  <div>
+    <h1 className="header">This is JSX</h1>
+    <p>This is a paragraph</p>
+  </div>
+);
+
+ReactDOM.render(page, document.querySelector("#root"));
