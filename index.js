@@ -57,19 +57,41 @@ root.append(JSON.stringify(navbar));
 //******************************************************
 
 //challenge 1
+/* 
+function TemporaryName() {
+  return (
+    <body>
+      <img src="./react-logo.png" />
+      <h1>Fun facts about React</h1>
+      <ul>
+        <li>Was first released in 2013</li>
+        <li>Was originally created ny jordan walke</li>
+        <li>Has well over 100k stars on Github</li>
+        <li>It is maintained by Facebook</li>
+        <li>Powers thousands of enterprise apps, including mobile appps</li>
+      </ul>
+    </body>
+  );
+}
 
-const body = (
+ReactDOM.render(<TemporaryName />, document.querySelector("#root"));
+ */
+
+//************************************************
+//************************************************
+//challenge 2
+
+function MyPage() {
   <body>
-    <img src="./react-logo.png" />
-    <h1>Fun facts about React</h1>
+    <h1>Why i am exicted to learn react</h1>
     <ul>
-      <li>Was first released in 2013</li>
-      <li>Was originally created ny jordan walke</li>
-      <li>Has well over 100k stars on Github</li>
-      <li>It is maintained by Facebook</li>
-      <li>Powers thousands of enterprise apps, including mobile appps</li>
+      <li>Because it fun to try new things</li>
+      <li>It a popular framework that simplifies web</li>
+      <li>It has lot of fun features</li>
+      <li>It can kick start your journey into mobile app</li>
+      <li>And i need it to get a job</li>
     </ul>
-  </body>
-);
+  </body>;
+}
 
-ReactDOM.render(body, document.querySelector("#root"));
+ReactDOM.render(<MyPage />, document.querySelector("#root"));
