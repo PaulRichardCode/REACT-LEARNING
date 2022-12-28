@@ -79,6 +79,20 @@ ReactDOM.render(<TemporaryName />, document.querySelector("#root"));
 
 //************************************************
 //************************************************
+//QUIZ
+
+//what is a react component?
+//React component is a function that returns react element, which can be reUsed
+
+//react element is simply JSX
+
+//WHAT IS JSX?
+//jSX looks like html and it is a react syntax that under the hood returns a javascript object
+
+//Pascal case starts with a captal letter
+
+//************************************************
+//************************************************
 //challenge 2
 
 import { func } from "prop-types";
@@ -88,8 +102,13 @@ import ReactDOM from "react-dom";
 function Header() {
   return (
     <header>
-      <nav>
-        <img src="./react-logo.png" width={"20px"} />
+      <nav className="navi">
+        <img src="./react-logo.png" className="nav-logo" />
+        <ul className="nav-items">
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
       </nav>
     </header>
   );
@@ -125,17 +144,3 @@ function MyPage() {
 }
 
 ReactDOM.render(<MyPage />, document.querySelector("#root"));
-
-//************************************************
-//************************************************
-//QUIZ
-
-//what is a react component?
-//React component is a function that returns react element, which can be reUsed
-
-//react element is simply JSX
-
-//WHAT IS JSX?
-//jSX looks like html and it is a react syntax that under the hood returns a javascript object
-
-//Pascal case starts with a captal letter

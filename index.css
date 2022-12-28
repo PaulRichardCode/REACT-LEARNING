@@ -1,0 +1,20 @@
+.nav-items {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-items > li {
+  padding: 10px;
+}
+
+.nav-logo {
+  width: 40px;
+}
