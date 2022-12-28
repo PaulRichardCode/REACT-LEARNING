@@ -80,18 +80,43 @@ ReactDOM.render(<TemporaryName />, document.querySelector("#root"));
 //************************************************
 //************************************************
 //challenge 2
+/* 
+import React from "react";
+import ReactDOM from "react-dom";
 
 function MyPage() {
-  <body>
-    <h1>Why i am exicted to learn react</h1>
-    <ul>
-      <li>Because it fun to try new things</li>
-      <li>It a popular framework that simplifies web</li>
-      <li>It has lot of fun features</li>
-      <li>It can kick start your journey into mobile app</li>
-      <li>And i need it to get a job</li>
-    </ul>
-  </body>;
+  return (
+    <body>
+      <header>
+        <nav>
+          <img src="./react-logo.png" width={"20px"} />
+        </nav>
+      </header>
+      <h1>Why i am exicted to learn react</h1>
+      <ul>
+        <li>Because it fun to try new things</li>
+        <li>It a popular framework that simplifies web</li>
+        <li>It has lot of fun features</li>
+        <li>It can kick start your journey into mobile app</li>
+        <li>And i need it to get a job</li>
+      </ul>
+      <footer>0 20xx paul development. All rights reserved</footer>
+    </body>
+  );
 }
 
-ReactDOM.render(<MyPage />, document.querySelector("#root"));
+ReactDOM.render(<MyPage />, document.querySelector("#root")); */
+
+//************************************************
+//************************************************
+//QUIZ
+
+//what is a react component?
+//React component is a function that returns react element, which can be reUsed
+
+//react element is simply JSX
+
+//WHAT IS JSX?
+//jSX looks like html and it is a react syntax that under the hood returns a javascript object
+
+//Pascal case starts with a captal letter
