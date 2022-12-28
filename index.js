@@ -80,19 +80,25 @@ ReactDOM.render(<TemporaryName />, document.querySelector("#root"));
 //************************************************
 //************************************************
 //challenge 2
-/* 
+
+import { func } from "prop-types";
 import React from "react";
 import ReactDOM from "react-dom";
 
-function MyPage() {
+function Header() {
   return (
-    <body>
-      <header>
-        <nav>
-          <img src="./react-logo.png" width={"20px"} />
-        </nav>
-      </header>
-      <h1>Why i am exicted to learn react</h1>
+    <header>
+      <nav>
+        <img src="./react-logo.png" width={"20px"} />
+      </nav>
+    </header>
+  );
+}
+
+function List() {
+  return (
+    <div>
+      <h1>Reasons i am exicted to learn react</h1>
       <ul>
         <li>Because it fun to try new things</li>
         <li>It a popular framework that simplifies web</li>
@@ -100,12 +106,25 @@ function MyPage() {
         <li>It can kick start your journey into mobile app</li>
         <li>And i need it to get a job</li>
       </ul>
-      <footer>0 20xx paul development. All rights reserved</footer>
+    </div>
+  );
+}
+
+function Footer() {
+  return <footer>0 20xx paul development. All rights reserved</footer>;
+}
+
+function MyPage() {
+  return (
+    <body>
+      <Header />
+      <List />
+      <Footer />
     </body>
   );
 }
 
-ReactDOM.render(<MyPage />, document.querySelector("#root")); */
+ReactDOM.render(<MyPage />, document.querySelector("#root"));
 
 //************************************************
 //************************************************
