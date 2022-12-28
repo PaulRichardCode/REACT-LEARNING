@@ -95,10 +95,6 @@ ReactDOM.render(<TemporaryName />, document.querySelector("#root"));
 //************************************************
 //challenge 2
 
-import { func } from "prop-types";
-import React from "react";
-import ReactDOM from "react-dom";
-
 function Header() {
   return (
     <header>
