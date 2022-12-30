@@ -1,5 +1,5 @@
-import React from "react";
-import ReactDOM from "react";
+/* import React from "react";
+import ReactDOM from "react"; */
 import Header from "./header";
 import Footer from "./footer";
 import List from "./list";
