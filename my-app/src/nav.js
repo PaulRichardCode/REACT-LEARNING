@@ -5,7 +5,7 @@ export default function Nav() {
   return (
     <nav className="react-nav">
       <div className="logo">
-        <img src={reactLogo} width="40px" height="40px" />
+        <img src={reactLogo} width="40px" height="40px" alt="react-logo" />
         <h1 className="heading">ReactFacts</h1>
       </div>
       <h2>React Course - Project 1</h2>
