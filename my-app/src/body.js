@@ -1,16 +1,10 @@
 import React from "react";
+import FirstImg from "./images/pro1.jpg";
 
-export default function Body() {
+export default function Card() {
   return (
-    <main className="main">
-      <h1 className="bodyh1">Fun facts about React</h1>
-      <ul className="list">
-        <li className="li">Was first released in 2013</li>
-        <li>Was originally created by Jordan Walke</li>
-        <li>Has well over 100k stars on Github</li>
-        <li>Is maintained by facebook</li>
-        <li>powers thousands if enterprise apps including mobile apps</li>
-      </ul>
+    <main className="card">
+      <img src={FirstImg} alt="portrait" className="pro1" />
     </main>
   );
 }
