@@ -45,5 +45,12 @@
 }
 
 .pro1 {
-  width: 300px;
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+}
+
+.card {
+  width: 95%;
+  margin: 0 auto;
 }
