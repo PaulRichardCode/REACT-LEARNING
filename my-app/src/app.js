@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "./navbar";
+import Nav from "../../tutorial 1/navbar";
 import Hero from "./hero";
 import Body from "./body";
 
