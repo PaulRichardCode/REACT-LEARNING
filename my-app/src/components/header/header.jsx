@@ -1,14 +1,13 @@
 import React from "react";
 import css from "./header.module.css";
 import Logo from "../../assets/logo.png";
-import { CgShoppingBag } from "";
 
 export default function header() {
   return (
     <div className={css.container}>
       <div className={css.logo}>
         <img src={Logo} alt="logo" />
-        <span>amazon</span>
+        <span>GlowsByJimi</span>
       </div>
 
       <div className={css.rightside}>
@@ -22,8 +21,12 @@ export default function header() {
           </ul>
         </div>
 
-        <input type="text" id="search" className={css.search} />
-        <CgShoppingBag className={css.cart} />
+        <input
+          type="text"
+          id="search"
+          placeholder="Search"
+          className={css.search}
+        />
       </div>
     </div>
   );

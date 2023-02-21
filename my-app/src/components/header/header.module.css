@@ -6,6 +6,7 @@
 .logo {
   display: flex;
   align-self: center;
+  flex: 1;
 }
 
 .logo > img {
@@ -15,4 +16,34 @@
 
 .logo > span {
   font-weight: 600;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+.rightside {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-weight: 500;
+}
+
+.menu > li:hover {
+  color: #fe956f;
+  cursor: pointer;
+}
+
+.search {
+  width: 7rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  height: 30%;
 }
