@@ -10,7 +10,7 @@ export default function Hero() {
         <span>skin protection cream</span>
 
         <div className={css.text2}>
-          <span>Trend: Coll Lorem ipsum dolor sit amet, consectection</span>
+          <span>Trend: Colle Lorem ipsum dolor sit amet, consectection</span>
           <span>etur adipisicing elit. Eos.</span>
         </div>
       </div>
