@@ -28,7 +28,7 @@ export default function header() {
           placeholder="Search"
           className={css.search}
         />
-        <BsCart4 />
+        <BsCart4 className={css.cart} />
       </div>
     </div>
   );

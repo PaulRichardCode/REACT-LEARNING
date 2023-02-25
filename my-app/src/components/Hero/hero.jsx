@@ -1,26 +1,48 @@
 import React from "react";
-import css from "./hero.module.css";
+import { HiShoppingBag } from "react-icons/hi2";
+import { BsArrowRight } from "react-icons/bs";
+import HeroImg from "../../assets/hero.png";
 
 export default function Hero() {
   return (
-    <div className={css.container}>
+    <div className="container mx-auto px-4 bg-slate-300">
       {/* Left hand side */}
-
-      <div className={css.h_sides}>
+      <div>
         <span>skin protection cream</span>
 
-        <div className={css.text2}>
-          <span>Trend: Colle Lorem ipsum dolor sit amet, consectection</span>
-          <span>etur adipisicing elit. Eos.</span>
+        <div>
+          <span>Trendy collections </span>
+          <span>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate
+            officiis voluptates soluta omnis consectetur. Explicabo dignissimos
+          </span>
         </div>
       </div>
-
       {/* Middle side here image */}
+      <div>
+        <div></div>
+        <img src={HeroImg} alt="girl" width={600} />
+        <div>
+          <HiShoppingBag />
 
-      <div className={css.wrapper}>
-        <div className={css.blueCircle}></div>
-        <img src="" alt="" width={600} />
-        <div className={css.cart2}> </div>
+          <div>
+            <span>Best Signup offers</span>
+            <div>
+              <BsArrowRight />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* RIGHT SIDE */}'
+      <div>
+        <div>
+          <span>1.5m</span>
+          <span>Monthly Traffic</span>
+        </div>
+        <div>
+          <span>100k</span>
+          <span>Happy customers</span>
+        </div>
       </div>
     </div>
   );
