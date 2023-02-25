@@ -5,9 +5,9 @@ import HeroImg from "../../assets/hero.png";
 
 export default function Hero() {
   return (
-    <div className="container mx-auto px-4 bg-slate-300">
+    <div className="container mx-auto flex px-4 bg-yellow-300">
       {/* Left hand side */}
-      <div>
+      <div className="">
         <span>skin protection cream</span>
 
         <div>
@@ -19,9 +19,9 @@ export default function Hero() {
         </div>
       </div>
       {/* Middle side here image */}
-      <div>
-        <div></div>
-        <img src={HeroImg} alt="girl" width={600} />
+      <div className="basis-1/2">
+        <div className="w-96 h-96 bg-gradient-to-b from-cyan-600 to-violet-400 rounded-full left-50% top-50% absolute"></div>
+        <img src={HeroImg} alt="girl" width={600} className="relative" />
         <div>
           <HiShoppingBag />
 
@@ -35,7 +35,7 @@ export default function Hero() {
       </div>
       {/* RIGHT SIDE */}'
       <div>
-        <div>
+        <div className="">
           <span>1.5m</span>
           <span>Monthly Traffic</span>
         </div>

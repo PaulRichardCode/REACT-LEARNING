@@ -1,4 +1,8 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
   margin: 0;
   background: var(--bg);
   transition: all 3ms ease;
@@ -6,3 +10,4 @@ body {
   color: var(--black);
   scroll-behavior: smooth;
 }
+ */
