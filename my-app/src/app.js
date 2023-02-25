@@ -5,7 +5,7 @@ import Hero from "./components/Hero/hero";
 
 export default function App() {
   return (
-    <div>
+    <div className="bg-yellow-400">
       <Header />
       <Hero />
     </div>
