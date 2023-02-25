@@ -19,7 +19,7 @@ export default function Hero() {
 
       <div className={css.wrapper}>
         <div className={css.blueCircle}></div>
-        <img src={HeroImg} alt="" width={600} />
+        <img src="" alt="" width={600} />
         <div className={css.cart2}> </div>
       </div>
     </div>
