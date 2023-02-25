@@ -1,6 +1,7 @@
 import React from "react";
 import css from "./header.module.css";
 import Logo from "../../assets/logo.png";
+import { BsCart4 } from "react-icons/bs";
 
 export default function header() {
   return (
@@ -27,6 +28,7 @@ export default function header() {
           placeholder="Search"
           className={css.search}
         />
+        <BsCart4 />
       </div>
     </div>
   );
