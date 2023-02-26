@@ -1,9 +1,10 @@
 import React from "react";
+import { SliderProducts } from "../../data/products";
 
 export default function scroller() {
-  return (
-    <div>
-      <h1>ADD SCROLL STUFF HERE USING DATA</h1>
-    </div>
-  );
+  const products = SliderProducts.map((produce) => {
+    produce.name;
+  });
+
+  return <div className="py-32">{products}</div>;
 }
