@@ -1,10 +1,10 @@
 import React from "react";
-import { SliderProducts } from "../../data/products";
+import img from "../../assets/img1.png";
 
 export default function scroller() {
   return (
     <div className="py-32 flex items-center justify-center">
-      <div className="flex container w-72 h-56 bg-white rounded-3xl  border-black">
+      <div className="flex container w-72 h-56 bg-white rounded-3xl justify-around border-black cursor-pointer">
         <div className="p-5">
           <h3 className="text-3xl font-bold">SKIN</h3>
           <span className="block">mommi</span>
@@ -14,9 +14,11 @@ export default function scroller() {
           </p>
         </div>
         <div>
-          <img src="#" alt="bro" />
+          <img src={img} alt="bro" className="-rotate-12 h-60" />
         </div>
       </div>
     </div>
   );
 }
+
+console.log(console);
