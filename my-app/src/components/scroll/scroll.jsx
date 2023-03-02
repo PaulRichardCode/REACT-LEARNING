@@ -5,13 +5,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { ProductsData } from "../../data/products";
 
 export default function scroller() {
   return (
-    <div>
+    <div className="s-container">
       <Swiper
         // install Swiper modules
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
         slidesPerView={3}
         navigation
@@ -19,11 +19,26 @@ export default function scroller() {
         scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}>
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2.</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        ...
+        {ProductsData.map((slide) => {
+          <SwiperSlide>
+            <div className="py-32 flex items-center justify-center">
+              <div className="flex container w-72 h-56 bg-yellow-50 rounded-3xl justify-around border-black cursor-pointer">
+                <div className="p-5">
+                  <h3 className="text-3xl font-bold">baddest</h3>
+                  <span className="block">{slide.detail}</span>
+                  <h3 className="py-6 font-extrabold text-4xl">
+                    {slide.price}
+                  </h3>
+                  <p className="border-2 border-black/50 p-2 text-xs rounded-2xl">
+                    {slide.type}
+                  </p>
+                </div>
+
+                <img src={slide.img} alt="bro" className="-rotate-12 h-60" />
+              </div>
+            </div>
+          </SwiperSlide>;
+        })}
       </Swiper>
       );
     </div>
