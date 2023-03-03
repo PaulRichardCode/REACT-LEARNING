@@ -4,15 +4,28 @@ import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
+import { ProductsData } from "../../data/products";
 
-export default function scroller(props) {
+export default function scroller() {
   <section id="Testimonials">
     <h5>Review from clients</h5>
     <h2>Testimonials</h2>
-
-    <swiper>
-      return(
-      <h1>pogers</h1>)
+    <swiper className="container">
+      {ProductsData.map(({ name, img, detail, type, price }, index) => {
+        return (
+          <SwiperSlide key={index}>
+            <div className="client">
+              <img src={img} alt="img" />
+            </div>
+            <h3 className="text-3xl font-bold">{props.name}</h3>
+            <span className="block">{props.detail}</span>
+            <h3 className="py-6 font-extrabold text-4xl">{props.price}</h3>
+            <p className="border-2 border-black/50 p-2 text-xs rounded-2xl">
+              {props.type}
+            </p>
+          </SwiperSlide>
+        );
+      })}
     </swiper>
   </section>;
 }
