@@ -2,10 +2,11 @@ import React from "react";
 import Header from "./components/header/header";
 import Scroll from "./components/scroll/scroll";
 import Hero from "./components/Hero/hero";
-import { ProductsData } from "./data/products";
+import { SliderProducts } from "./data/products";
+import "./App.css";
 
 export default function App() {
-  const data = ProductsData.map((prod) => {
+  const data = SliderProducts.map((prod) => {
     return (
       <Scroll
         img={prod.img}
@@ -18,10 +19,10 @@ export default function App() {
   });
 
   return (
-    <div className="bg-yellow-300">
+    <div>
       <Header />
       <Hero />
-      <div>{data}</div>
+      <div className="my-40 flex justify-center">{data}</div>
     </div>
   );
 }
