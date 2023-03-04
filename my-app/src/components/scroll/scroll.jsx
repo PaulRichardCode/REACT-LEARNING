@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -38,8 +39,7 @@ export default function scroller(props) {
   );
 }
 
-{
-  /*export default () => {
+/*export default () => {
   return (
       <div className="py-32 flex items-center justify-center">
       <div className="flex container w-72 h-56 bg-yellow-50 rounded-3xl justify-around border-black cursor-pointer">
@@ -58,4 +58,3 @@ export default function scroller(props) {
     </div> 
   );
 };*/
-}
