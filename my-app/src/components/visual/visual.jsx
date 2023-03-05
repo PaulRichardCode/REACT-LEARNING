@@ -1,10 +1,8 @@
 import React from "react";
 import Shade from "../../assets/shade.png";
 import Before from "../../assets/before.png";
-/* INSTALL THIS */
-import ReactCompareImg from "react-compare-image";
 import After from "../../assets/after.png";
-
+import ReactCompareImage from "react-compare-image";
 const visual = () => {
   return (
     <div className="container mx-auto w-3/4 text-center flex justify-around">
@@ -17,7 +15,7 @@ const visual = () => {
         <img src={Shade} alt="Shade" className="w-32" />
       </div>
       <div className="w-1/2">
-        <img src={Before} alt="k" />
+        <ReactCompareImage leftImage={Before} rightImage={After} />
       </div>
     </div>
   );
