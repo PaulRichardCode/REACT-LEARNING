@@ -1,6 +1,8 @@
 import React from "react";
 import Shade from "../../assets/shade.png";
 import Before from "../../assets/before.png";
+/* INSTALL THIS */
+import ReactCompareImg from "react-compare-image";
 import After from "../../assets/after.png";
 
 const visual = () => {
@@ -14,7 +16,9 @@ const visual = () => {
         <span className="block text-2xl font-bold"> Try NOW!</span>
         <img src={Shade} alt="Shade" className="w-32" />
       </div>
-      <div className="w-1/2"></div>
+      <div className="w-1/2">
+        <img src={Before} alt="k" />
+      </div>
     </div>
   );
 };
