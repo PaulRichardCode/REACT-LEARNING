@@ -4,6 +4,7 @@ import Scroll from "./components/scroll/scroll";
 import Hero from "./components/Hero/hero";
 import { SliderProducts } from "./data/products";
 import "./App.css";
+import Visual from "./components/visual/visual";
 
 export default function App() {
   const data = SliderProducts.map((prod) => {
@@ -23,6 +24,7 @@ export default function App() {
       <Header />
       <Hero />
       <div className="my-40 flex justify-center">{data}</div>
+      <Visual />
     </div>
   );
 }
