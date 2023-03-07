@@ -3,7 +3,7 @@ import Plane from "../../assets/plane.png";
 import { ProductsData } from "../../data/products";
 
 export default function products() {
-  const [MenuProducts, setMenuProducts] = useState(ProductsData);
+  const [MenuProducts, SetMenuProducts] = useState(ProductsData);
 
   return (
     <div>
