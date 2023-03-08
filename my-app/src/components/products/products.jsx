@@ -45,7 +45,7 @@ export default function Products() {
                 <img
                   src={Products.img}
                   alt=""
-                  classname="w-12 h-16 absolute rotate-45"
+                  className="w-32 h-16 absolute top-20 left-40 -rotate-45"
                 />
               </div>
             );
