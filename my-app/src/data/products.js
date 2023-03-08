@@ -56,7 +56,7 @@ export const ProductsData = [
     type: "skin care",
   },
   {
-    name: "Foundation",
+    name: "FOUNDATION",
     detail: "Super Skin Care",
     price: "25",
     img: img4,
