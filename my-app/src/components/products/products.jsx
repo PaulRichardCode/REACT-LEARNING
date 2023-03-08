@@ -23,3 +23,4 @@ export default function products() {
     </div>
   );
 }
+console.log(MenuProducts);
