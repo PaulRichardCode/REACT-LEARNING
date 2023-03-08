@@ -27,7 +27,7 @@ export default function Products() {
         <div className="basis-4/5 flex gap-3 flex-wrap overflow-y-scroll h-96 ">
           {MenuProducts.map((Products) => {
             return (
-              <div className=" w-48 relative bg-white flex h-32 justify-between p-3 rounded-xl">
+              <div className=" w-48 relative bg-white flex h-32 justify-between overflow-hidden p-3 rounded-xl">
                 {/* Text Only */}
                 <div className="flex flex-col items-stretch justify-between">
                   <div className="mb-1">
@@ -37,7 +37,7 @@ export default function Products() {
                     </span>
                   </div>
                   <span className="text-2xl font-bold">{Products.price}$</span>
-                  <div className=" border border-black w-20 rounded-2xl text-sm py-1 cursor-pointer px-1">
+                  <div className=" border border-black w-20 rounded-2xl text-xs text-center py-1 cursor-pointer px-1">
                     Shop Now
                   </div>
                 </div>
@@ -45,7 +45,7 @@ export default function Products() {
                 <img
                   src={Products.img}
                   alt=""
-                  classname="w-12 h-16 absolute "
+                  classname="w-12 h-16 absolute rotate-45"
                 />
               </div>
             );
