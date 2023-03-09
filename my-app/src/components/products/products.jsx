@@ -48,10 +48,10 @@ export default function Products() {
           </li>
         </ul>
 
-        <div className="basis-4/5 flex gap-3 flex-wrap overflow-y-scroll h-96 cursor-pointer">
+        <div className="basis-4/5 flex gap-3 flex-wrap overflow-y-scroll h-96 ">
           {MenuProducts.map((Products) => {
             return (
-              <div className=" w-48 relative bg-white flex h-32 justify-between overflow-hidden p-3 rounded-xl">
+              <div className=" w-48 relative bg-white flex h-32 justify-between overflow-hidden p-3 cursor-pointer rounded-xl">
                 {/* Text Only */}
                 <div className="flex flex-col items-stretch justify-between">
                   <div className="mb-1">
