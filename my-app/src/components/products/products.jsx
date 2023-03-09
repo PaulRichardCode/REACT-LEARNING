@@ -6,7 +6,11 @@ export default function Products() {
   const [MenuProducts, setMenuProducts] = useState(ProductsData);
 
   function filter(type) {
-    setMenuProducts(ProductsData.filter((product) => product.type === type));
+    setMenuProducts(
+      ProductsData.filter((product) => {
+        return product.type === type;
+      })
+    );
   }
 
   return (
@@ -16,7 +20,9 @@ export default function Products() {
 
       <div className="flex py-10">
         <ul className="basis-1/5 flex flex-col gap-10 font-medium text-xl ">
-          <li className="hover:text-pink-500 transition-colors cursor-pointer">
+          <li
+            onClick={() => setMenuProducts(ProductsData)}
+            className="hover:text-pink-500 transition-colors cursor-pointer">
             All
           </li>
           <li
@@ -26,13 +32,23 @@ export default function Products() {
             className="hover:text-pink-500 transition-colors cursor-pointer">
             Skin Care
           </li>
-          <li className="hover:text-pink-500 transition-colors cursor-pointer">
+          <li
+            onClick={() => {
+              filter("conditioner");
+            }}
+            className="hover:text-pink-500 transition-colors cursor-pointer">
             Conditioners
           </li>
-          <li className="hover:text-pink-500 cursor-pointer">Foundations</li>
+          <li
+            onClick={() => {
+              filter("foundation");
+            }}
+            className="hover:text-pink-500 cursor-pointer">
+            Foundations
+          </li>
         </ul>
 
-        <div className="basis-4/5 flex gap-3 flex-wrap overflow-y-scroll h-96 ">
+        <div className="basis-4/5 flex gap-3 flex-wrap overflow-y-scroll h-96 cursor-pointer">
           {MenuProducts.map((Products) => {
             return (
               <div className=" w-48 relative bg-white flex h-32 justify-between overflow-hidden p-3 rounded-xl">
