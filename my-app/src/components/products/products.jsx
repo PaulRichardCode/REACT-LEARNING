@@ -5,7 +5,9 @@ import { ProductsData } from "../../data/products";
 export default function Products() {
   const [MenuProducts, setMenuProducts] = useState(ProductsData);
 
-  const filter = (rose) => {};
+  function filter(type) {
+    setMenuProducts(ProductsData.filter((product) => product.type === type));
+  }
 
   return (
     <div className="container px-10">
@@ -17,7 +19,11 @@ export default function Products() {
           <li className="hover:text-pink-500 transition-colors cursor-pointer">
             All
           </li>
-          <li className="hover:text-pink-500 transition-colors cursor-pointer">
+          <li
+            onClick={() => {
+              filter("skin care");
+            }}
+            className="hover:text-pink-500 transition-colors cursor-pointer">
             Skin Care
           </li>
           <li className="hover:text-pink-500 transition-colors cursor-pointer">
