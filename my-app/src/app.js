@@ -6,6 +6,7 @@ import { SliderProducts } from "./data/products";
 import "./App.css";
 import Visual from "./components/visual/visual";
 import Products from "./components/products/products";
+import Testimonial from "./components/testimonial/testimonial";
 
 export default function App() {
   const data = SliderProducts.map((prod) => {
@@ -24,9 +25,10 @@ export default function App() {
     <div>
       <Header />
       <Hero />
-      <div className="my-40 flex justify-center">{data}</div>
+      <div className="mt-40 mb-24 flex justify-center">{data}</div>
       <Visual />
       <Products />
+      <Testimonial />
     </div>
   );
 }
