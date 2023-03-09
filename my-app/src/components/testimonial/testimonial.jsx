@@ -4,7 +4,7 @@ import Hero from "../../assets/testimonialHero.png";
 
 const Testimonial = () => {
   return (
-    <div className="flex justify-around w-11/12 mx-auto py-10">
+    <div className="flex justify-between items-end w-11/12 mx-auto py-10">
       <div className="basis-2/6">
         <h1>Top Rated</h1>
         <p>
