@@ -5,6 +5,8 @@ import { ProductsData } from "../../data/products";
 export default function Products() {
   const [MenuProducts, setMenuProducts] = useState(ProductsData);
 
+  const filter = (rose) => {};
+
   return (
     <div className="container px-10">
       <img src={Plane} alt="plane" className="w-24 mx-auto" />
@@ -45,7 +47,7 @@ export default function Products() {
                 <img
                   src={Products.img}
                   alt=""
-                  className="w-32 h-16 absolute top-20 left-40 -rotate-45"
+                  className="w-32 h-32 left-28 absolute -rotate-45"
                 />
               </div>
             );
