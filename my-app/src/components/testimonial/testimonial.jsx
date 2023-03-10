@@ -8,7 +8,7 @@ const Testimonial = () => {
       <div className="basis-2/6">
         <h1>Top Rated</h1>
         <p>
-          Seedily say has suitable disposal and boy... Exercise joy man children
+          Seedily say has suitable disposal and boy. Exercise joy man children
           rejoiced.
         </p>
       </div>
