@@ -14,7 +14,7 @@ const Testimonial = () => {
       </div>
 
       <img src={Hero} alt="hero" className="basis-2/6 w-96" />
-      <div className="basis-2/6">
+      <div className="basis-2/6 w-1/5">
         <h2>100K</h2>
         <p>Happy Customers with us</p>
       </div>
