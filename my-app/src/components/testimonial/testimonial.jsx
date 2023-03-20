@@ -19,7 +19,7 @@ const Testimonial = () => {
       <div className="basis-2/6 ">
         <div className="text-right uppercase">
           <h2 className="text-3xl pb-8 font-bold">100K</h2>
-          <p className="text-xs font-medium">Happy Customers with us..</p>
+          <p className="text-xs font-medium">Happy Customers with us</p>
         </div>
       </div>
     </div>
